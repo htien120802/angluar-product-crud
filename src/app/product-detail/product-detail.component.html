@@ -1,0 +1,58 @@
+<div class="container py-5 w">
+    <form class="p-md-5 border rounded-3 bg-body-tertiary" >
+
+      <div class="form-floating mb-3">
+          
+        <label class="form-label" >Code</label>
+  
+        <input type="text" class="form-control" value="{{product.code}}" disabled="true"/>
+  
+      </div>
+  
+      <div class="form-floating mb-3">
+          
+        <label class="form-label" >Name</label>
+  
+        <input type="text" class="form-control" value="{{product.name}}" disabled="true"/>
+  
+      </div>
+
+      <div class="form-floating mb-3">
+          
+        <label class="form-label" >Category</label>
+  
+        <input type="text" class="form-control" value="{{product.category}}" disabled="true"/>
+  
+      </div>
+
+      <div class="form-floating mb-3">
+          
+        <label class="form-label" >Brand</label>
+  
+        <input type="text" class="form-control" value="{{product.brand}}" disabled="true"/>
+  
+      </div>
+
+      <div class="form-floating mb-3">
+          
+        <label class="form-label" >Type</label>
+  
+        <input type="text" class="form-control" value="{{product.type}}" disabled="true"/>
+  
+      </div>
+  
+      <div class="form-floating mb-3">
+          
+                <label class="form-label" for="description">Description</label>
+  
+        <input type="text" id="description" class="form-control" value="{{product.description}}" disabled="true"/>
+  
+      </div>
+
+      <div class="w-100" style="display: flex; justify-content: space-around;">
+        <button class="btn btn-lg btn-primary" routerLink="/update-product/{{product.code}}">Edit</button>
+        <button class="btn btn-lg btn-primary" (click)="clickDelete(product.code)">Delete</button>
+      </div>
+    </form>
+  </div>
+  

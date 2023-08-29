@@ -1,0 +1,56 @@
+<div class="container py-5 w">
+  <form (ngSubmit)="onSubmit()" class="p-md-5 border rounded-3 bg-body-tertiary" >
+
+    <div class="form-floating mb-3">
+      
+      <label class="form-label" for="code">Code</label>
+
+      <input type="text" id="code" class="form-control" value="{{product.code}}" [(ngModel)]="product.code" [ngModelOptions]="{standalone: true}" disabled="true"/>
+
+    </div>
+
+    <div class="form-floating mb-3">
+      
+      <label class="form-label" for="name">Name</label>
+
+      <input type="text" id="name" class="form-control" value="{{product.name}}" [(ngModel)]="product.name" [ngModelOptions]="{standalone: true}"/>
+
+    </div>
+
+    <div class="form-floating mb-3">
+      
+      <label class="form-label" for="category">Category</label>
+
+      <input type="text" id="category" class="form-control" value="{{product.category}}" [(ngModel)]="product.category" [ngModelOptions]="{standalone: true}"/>
+
+    </div>
+
+    <div class="form-floating mb-3">
+      
+      <label class="form-label" for="brand">Brand</label>
+
+      <input type="text" id="brand" class="form-control" value="{{product.brand}}" [(ngModel)]="product.brand" [ngModelOptions]="{standalone: true}"/>
+
+    </div>
+
+    <div class="form-floating mb-3">
+      
+      <label class="form-label" for="type">Type</label>
+
+      <input type="text" id="type" class="form-control" value="{{product.type}}" [(ngModel)]="product.type" [ngModelOptions]="{standalone: true}"/>
+
+    </div>
+
+    <div class="form-floating mb-3">
+      
+      <label class="form-label" for="description">Description</label>
+
+      <input type="text" id="description" class="form-control" value="{{product.description}}" [(ngModel)]="product.description" [ngModelOptions]="{standalone: true}"/>
+
+    </div>
+
+    <button type="submit" class="w-100 btn btn-lg btn-primary">Save</button>
+
+  </form>
+</div>
+
